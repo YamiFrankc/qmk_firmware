@@ -27,6 +27,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MANUFACTURER    ZSA Technology Labs Inc
 #define PRODUCT         ErgoDox EZ
 
+/* DEFINE LEADER KEY HAHA */
+#define LEADER_TIMEOUT 300
+
 /* key matrix size */
 #define MATRIX_ROWS 14
 #define MATRIX_ROWS_PER_SIDE (MATRIX_ROWS / 2)
@@ -41,6 +44,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEBOUNCE 30
 
 #define TAPPING_TOGGLE  1
+
+#define UNICODE_SELECTED_MODES UC_WINC
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
