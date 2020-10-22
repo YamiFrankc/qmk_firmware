@@ -2,3 +2,4 @@ RGBLIGHT_ENABLE = no
 RGB_MATRIX_ENABLE = yes # enable later
 #UNICODE_ENABLE   = yes # Unicode
 UNICODEMAP_ENABLE = yes
+TAP_DANCE_ENABLE = yes

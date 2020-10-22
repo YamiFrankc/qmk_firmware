@@ -24,6 +24,20 @@ enum unicode_names {
     R_CORNER_BRA
 };
 
+// enum tap_dance {
+//   TD_BRACKETS_L,
+//   TD_BRACKETS_R,
+// };
+
+// // Tap dance definitions
+// qk_tap_dance_action_t tap_dance_actions[] = {
+//     // Tap once for Escape, twice for Caps Lock
+//     [TD_BRACKETS_L] = ACTION_TAP_DANCE_TRIPLE(KC_LBRC, KC_LEFT_CURLY_BRACE,KC_LEFT_PAREN),
+//     [TD_BRACKETS_R] = ACTION_TAP_DANCE_TRIPLE(KC_RBRC, KC_RIGHT_CURLY_BRACE,KC_RIGHT_PAREN),
+
+    
+// };
+
 const uint32_t PROGMEM unicode_map[] = {
     [BANG]  = 0x203D,  // ‽
     [IRONY] = 0x2E2E,  // ⸮
@@ -68,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LGUI,     KC_LALT,      KC_W,  KC_RALT, KC_LEAD,
                                               TT(1),  KC_DEL,
                                                               KC_HOME,
-                                               KC_BSPC,LT(SYMB, KC_SPC),KC_END,
+                                               KC_BSPC,KC_SPC,LT(SYMB,KC_END),
         // right hand
              KC_BSLASH,     KC_6,   KC_7,  KC_8,   KC_9,   KC_0,             KC_MINS,
              TG(SYMB),    KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,             KC_EQL,
